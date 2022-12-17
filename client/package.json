@@ -2,25 +2,47 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "author": "Mateusz Głodek",
+  "scripts": {
+    "start": "PORT=3011 BROWSER=none react-scripts start",
+    "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@hookform/resolvers": "^2.9.10",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "faker": "^6.6.6",
+    "jwt-decode": "^3.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.5.0",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.7",
+    "react-toastify": "^9.1.1",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
+    "@types/jwt-decode": "^3.1.0",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "@types/styled-components": "^5.1.26",
+    "@types/yup": "^0.32.0",
+    "prettier": "^2.8.1"
   },
   "eslintConfig": {
     "extends": [
